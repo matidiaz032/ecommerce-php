@@ -1,0 +1,13 @@
+.gorra img {
+    width: 180px;
+    height: 180px
+}
+
+.gorras-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gorra {
+    margin: 20px;
+}
