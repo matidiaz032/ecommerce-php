@@ -4,13 +4,19 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Ecommerce - PHP puro</title>
+   <!-- Estilos barra navegacion -->
    <link rel="stylesheet" href="css/style.css">
+   <!-- Estilos pagina -->
    <link rel="stylesheet" href="css/index.css">
+   <!-- Fuentes -->
    <script src="https://kit.fontawesome.com/4baeadfaf1.js" crossorigin="anonymous"></script>
+   <!-- Bootstrap -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body class="body">
    <header>
+
+   <!-- Barra de Navegacion pantallas grandes -->
       <nav>
          <ul class="nav justify-content-end">
             <li class="nav-item">
@@ -26,8 +32,9 @@
             <button type="button" class="btn btn-light"><a class="nav-link nav-button" href="register.php"><i class="fas fa-sign-out-alt"></i> Registrarse</a></button>
             </li>
          </ul>
-
       </nav>
+
+      <!-- Barra de Navegacion celulares -->
       <nav class="responsive-nav">
          <ul class="responsive-ul">
             <li class="responsive-elements nav-item"><a href="productos.php"><i class="fas fa-tshirt"></i> Productos</a></li>
@@ -37,23 +44,31 @@
          </ul>
       </nav>
    </header>
+
+   <!-- Productos -->
    <section class="gorras">
       <div class="all-gorras">
+      
+      <!-- Seccion 1 -->
          <div class="gorras-section">
             <div class="gorra">
                <div class="img-gorra">
                   <img src="gorras/gorra-adidas-originals-patch-trucker.jpg">
                </div>
                <div class="about-gorra">
-
+                  <b>Gorra Adidas Originals Patch Trucker</b>
+                  <p>Precio: <span>$2309</span></p>
+                  <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>
             </div>
             <div class="gorra">
                <div class="img-gorra">
-                  <img src="gorras/nikexjordan-jumpman-pro-classic.jpg">
+                  <img src="gorras/gorra-nike-sb-gris-performance-trucker.jpg">
                </div>
                <div class="about-gorra">
-
+                  <b>Gorra Nike SB Performance Trucker</b>
+                  <p>Precio: <span>$1299</span></p>
+                  <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>
             </div>
             <div class="gorra">
@@ -61,18 +76,33 @@
                   <img src="gorras/gorra-ferrari-red.jpg">
                </div>
                <div class="about-gorra">
-
+                  <b>Gorra Ferrari Red</b>
+                  <p>Precio: <span>$1590</span></p>
+                  <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
+               </div>   
+            </div>
+            <div class="gorra">
+               <div class="img-gorra">
+                  <img src="gorras/ve3-gorra.jpg">
+               </div>
+               <div class="about-gorra">
+                  <b>Gorra Collabs Vegeta SSJ</b>
+                  <p>Precio: <span>$3299</span></p>
+                  <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>   
             </div>
          </div>
-      </div>
+
+      <!-- Seccion 2 -->
          <div class="gorras-section">
             <div class="gorra">
                <div class="img-gorra">
                   <img src="gorras/gorra-lacoste-novak-djokovic.png">
                </div>
                <div class="about-gorra">
-
+                  <b>Gorra Lacoste Novak Djokovic</b>
+                  <p>Precio: <span>$2995</span></p>
+                  <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>
             </div>
             <div class="gorra">
@@ -80,7 +110,9 @@
                   <img src="gorras/gorra-puma-bmw-white.jpg">
                </div>
                <div class="about-gorra">
-
+                  <b>Gorra Puma BMW White</b>
+                  <p>Precio: <span>$3499</span></p>
+                  <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>
             </div>
             <div class="gorra">
@@ -88,12 +120,27 @@
                   <img src="gorras/gorra-reebok-delta.jpg">
                </div>
                <div class="about-gorra">
-
+                  <b>Gorra Reebok Delta</b>
+                  <p>Precio: <span>$1799</span></p>
+                  <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
+               </div>   
+            </div>
+            <div class="gorra">
+               <div class="img-gorra">
+                  <img src="gorras/gorra-jordan-snapback-gris-dorado.jpg">
+               </div>
+               <div class="about-gorra">
+                  <b>Gorra Jordan Snapback</b>
+                  <p>Precio: <span>$3400</span></p>
+                  <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>   
             </div>
          </div>
-      <div class="show-cart">
+      </div>
 
+      <!-- Carrito -->
+      <div class="show-cart">
+         <?php include("../private/show-cart.php"); ?>
       </div>
    </section>
 

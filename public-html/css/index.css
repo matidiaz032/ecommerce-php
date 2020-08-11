@@ -1,6 +1,8 @@
 .gorra img {
-    width: 180px;
-    height: 180px
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    border: 3px solid #fff;
 }
 
 .gorras-section {
@@ -9,5 +11,83 @@
 }
 
 .gorra {
-    margin: 20px;
+    margin: 30px;
+}
+
+.buy {
+    background-color: #48e;
+    padding: 6px 9px;
+    color: #eee;
+    border: none;
+}
+
+.buy:hover {
+    background-color: #26c;
+    padding: 6px 9px;
+    color: #eee;
+    border: none;
+}
+
+.gorras {
+    display: flex;
+}
+
+.all-gorras {
+    flex: 2;
+    margin-left: 90px;
+    margin-right: 40px;
+}
+
+.about-gorra {
+    /* text-align: center; */
+}
+
+.about-gorra b {
+    color: #676767;
+}
+
+.about-gorra p {
+    color: #48e;
+    margin-bottom: 3px;
+}
+
+.about-gorra span {
+    color: #24a;
+}
+
+.show-cart {
+    flex: 1;
+    padding: 26px;
+}
+
+.show-cart .h3-text {
+    background-color: #48e;
+    padding: 12px;
+    color: #fff;
+}
+
+.show-cart .cart {
+    background-color: #fff;
+}
+
+.cart .item {
+    padding: 8px 25px;
+    border-top: solid 1px rgba(38, 136, 238, 0.35);
+}
+
+.cart .item:last-child {
+    padding-bottom: 16px;
+}
+
+.cart .item:first-child {
+    padding-top: 16px;
+}
+
+.show-cart .final-result {
+    padding: 16px;
+    text-align: center;
+}
+
+.separate {
+    margin-left: 8px;
 }
