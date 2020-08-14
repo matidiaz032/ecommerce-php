@@ -1,8 +1,8 @@
-* {
+/* * {
    padding: 0;
    margin: 0;
    font-family: Century Gothic;
-}
+} */
 
 .body{
    background-color: #ededed;
@@ -37,10 +37,59 @@ nav {
 }
 
 @media only screen and (max-width: 550px) {
-   .nav {
+   .barra {
       display: none;
    }
    .responsive-nav {
       display: block;
    }
+   .responsive-nav .icon-for-slide {
+      font-size: 28px;
+      padding: 5px 20px;
+      color: #eee;
+   }
+   .responsive-nav .responsive-ul {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      background-color: #48e;
+      margin-top: -100%;
+      display: none;
+      height: 100%;
+      padding-top: 30px;
+   }
+   .responsive-ul li {
+      padding: 15px 0;
+   }
+   .responsive-ul li:hover > a {
+      color: #fff;
+   }
+   .responsive-ul li a {
+      text-decoration: none;
+      color: #eee;
+   }
+
+   @keyframes desaparecerNav {
+      0% {
+          margin-top: 0;
+          opacity: 1;
+      }
+      100% {
+          margin-top: -100%;
+          opacity: 0;
+      }
+  }
+  
+  @keyframes aparecerNav {
+      0% {
+          margin-top: -100%;
+          opacity: 0;
+      }
+      100% {
+          margin-top: 0;
+          opacity: 1;
+      }
+  }
 }
+
+

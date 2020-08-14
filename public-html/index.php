@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Ecommerce - PHP puro</title>
    <!-- Estilos barra navegacion -->
    <link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,7 @@
    <header>
 
    <!-- Barra de Navegacion pantallas grandes -->
-      <nav>
+      <nav class="barra">
          <ul class="nav justify-content-end">
             <li class="nav-item">
                <a class="nav-link active" href="productos.php"><i class="fas fa-tshirt"></i> Productos</a>
@@ -36,11 +36,12 @@
 
       <!-- Barra de Navegacion celulares -->
       <nav class="responsive-nav">
+         <i class="fas fa-angle-down icon-for-slide"></i>
          <ul class="responsive-ul">
-            <li class="responsive-elements nav-item"><a href="productos.php"><i class="fas fa-tshirt"></i> Productos</a></li>
-            <li class="responsive-elements nav-item"><a href="pagos.php"><i class="fas fa-shopping-cart"></i> Pagos</a></li>
-            <li class="responsive-elements nav-item"><a href="login.php"><i class="fas fa-sign-in-alt"></i> Iniciar Sesion</a></li>
-            <li class="responsive-elements nav-item"><a href="register.php"><i class="fas fa-sign-out-alt"></i> Registrarse</a></li>
+            <li class="elements"><a href="productos.php"><i class="fas fa-tshirt"></i> Productos</a></li>
+            <li class="elements"><a href="pagos.php"><i class="fas fa-shopping-cart"></i> Pagos</a></li>
+            <li class="elements"><a href="login.php"><i class="fas fa-sign-in-alt"></i> Iniciar Sesion</a></li>
+            <li class="elements"><a href="register.php"><i class="fas fa-sign-out-alt"></i> Registrarse</a></li>
          </ul>
       </nav>
    </header>
@@ -56,7 +57,7 @@
                   <img src="gorras/gorra-adidas-originals-patch-trucker.jpg">
                </div>
                <div class="about-gorra">
-                  <b>Gorra Adidas Originals Patch Trucker</b>
+                  <b>Gorra Adidas Originals Patch</b>
                   <p>Precio: <span>$2309</span></p>
                   <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>
@@ -66,7 +67,7 @@
                   <img src="gorras/gorra-nike-sb-gris-performance-trucker.jpg">
                </div>
                <div class="about-gorra">
-                  <b>Gorra Nike SB Performance Trucker</b>
+                  <b>Gorra Nike SB Performance</b>
                   <p>Precio: <span>$1299</span></p>
                   <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>
@@ -100,7 +101,7 @@
                   <img src="gorras/gorra-lacoste-novak-djokovic.png">
                </div>
                <div class="about-gorra">
-                  <b>Gorra Lacoste Novak Djokovic</b>
+                  <b class="name">Gorra Lacoste Novak Djokovic</b>
                   <p>Precio: <span>$2995</span></p>
                   <button class="buy"><i class="fas fa-shopping-cart"></i> Agregar</button>
                </div>
